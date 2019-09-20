@@ -4,7 +4,11 @@
   "description": "TOC",
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose --passWithNoTests"
+    "test": "jest --verbose --passWithNoTests",
+    "start": "node index.js",
+    "lint": "eslint **/*.js",
+    "test-watch": "jest --watchAll --verbose --coverage",
+    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json"
   },
   "repository": {
     "type": "git",
