@@ -1,0 +1,31 @@
+{
+  "name": "data-structures-and-algorithms",
+  "version": "1.0.0",
+  "description": "TOC",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose --passWithNoTests",
+    "start": "node index.js",
+    "lint": "eslint **/*.js",
+    "test-watch": "jest --watchAll --verbose --coverage",
+    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philfitch-401-advanced-javascript/data-structures-and-algorithms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/philfitch-401-advanced-javascript/data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/philfitch-401-advanced-javascript/data-structures-and-algorithms#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "eslint": "^6.4.0",
+    "jsdoc": "^3.6.3"
+  }
+}
