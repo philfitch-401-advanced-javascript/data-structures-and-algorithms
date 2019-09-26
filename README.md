@@ -2,4 +2,6 @@
 
 TOC
 
-[Challenge 01: Array Reverse](challenges/arrayReverse/README.md)
+[Array Reverse](challenges/arrayReverse/README.md)
+
+[Linked Lists](data-structures/linkedList/README.md)
