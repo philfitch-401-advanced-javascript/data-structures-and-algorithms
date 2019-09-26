@@ -22,10 +22,10 @@
   },
   "homepage": "https://github.com/philfitch-401-advanced-javascript/data-structures-and-algorithms#readme",
   "devDependencies": {
+    "eslint": "^6.4.0",
     "jest": "^24.9.0"
   },
   "dependencies": {
-    "eslint": "^6.4.0",
     "jsdoc": "^3.6.3"
   }
 }
