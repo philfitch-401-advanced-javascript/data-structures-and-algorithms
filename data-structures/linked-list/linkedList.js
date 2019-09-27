@@ -30,7 +30,7 @@ class LinkedList {
       current = current.next;
     }
     if(values.includes(value)) {
-      return true
+      return true;
     }
     return false;
   }
