@@ -1,11 +1,17 @@
 # Singly Linked List
-<!-- Short summary or background information -->
+Explore working with linked lists.
 
 ## Challenge
-<!-- Description of the challenge -->
+Create a linked list,
+insert nodes,
+check if the list includes a value,
+return a list of values
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Write a test for each method and try writing code to pass the test.
+The constructor and .insert are O(1). The includes and .toString methods involved making an array from the list, so were a little less efficient. I wonder if there is a better way?
 
 ## API
-<!-- Description of each method publicly available to your Linked List -->
+.insert adds a node to the front of the list.
+.includes checks if the list includes a value.
+.toString returns a string of all values in the list.
