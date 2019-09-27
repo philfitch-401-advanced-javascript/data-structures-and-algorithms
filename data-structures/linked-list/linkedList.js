@@ -1,7 +1,8 @@
 
 // Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
 class Node {
-  constructor(value) {
+  constructor(value) 
+  {
     this.value = value,
     this.next = null;
   }
@@ -9,7 +10,8 @@ class Node {
 
 class LinkedList {
   // Within your LinkedList class, include a head property. Upon instantiation, an empty Linked List should be created.
-  constructor() {
+  constructor() 
+  {
     this.head = null,
     this.size = 0;
   }
@@ -27,20 +29,24 @@ class LinkedList {
       if(current === value) {
         return true;
       } 
-      current = this.next;
+      current = current.next;
     }
     return false;
   }
   // Define a method called toString (or __str__ in Python) which takes in no arguments and returns a string representing all the values in the Linked List.
   toString() {
     let current = this.head;
-    let values = ``;
+    let values = [];
     while(current) {
-      const value = (this.value).toString;
-      values += `${value}, `;
+      values.push(`${current.value}`);
+      current = current.next;
     }
-    return values;
+    let valueString = `${values[0]}`;
+    for(let i = 1; i < values.length; i++) {
+      valueString += `, ` + `${values[i]}`;
+    }
+    return valueString;
   }
 }
 
-module.exports = { Node, LinkedList };
+module.exports = LinkedList;
