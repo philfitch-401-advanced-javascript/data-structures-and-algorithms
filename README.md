@@ -2,6 +2,8 @@
 
 TOC
 
-[Array Reverse](challenges/arrayReverse/README.md)
+[Array Reverse](challenges/arrayReverse/array-reverse.js)
 
-[Linked Lists](data-structures/linkedList/README.md)
+[Array Shift]()
+
+[Linked Lists](data-structures/linked-list/linkedList.js)
