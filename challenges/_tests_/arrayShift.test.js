@@ -7,7 +7,6 @@ describe('insertShiftArray', () => {
     const oddArray = [4, 8, 15, 23, 42];
 
     insertShiftArray(evenArray, 5);
-    console.log(evenArray)
     expect(evenArray).toEqual([2, 4, 5, 6, 8]);
 
     insertShiftArray(oddArray, 16);
