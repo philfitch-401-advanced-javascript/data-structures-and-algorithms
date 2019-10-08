@@ -6,4 +6,6 @@ TOC
 
 [Array Shift](challenges/arrayShift/array-shift.js)
 
+[Array Binary Search]()
+
 [Linked Lists](data-structures/linked-list/linkedList.js)
