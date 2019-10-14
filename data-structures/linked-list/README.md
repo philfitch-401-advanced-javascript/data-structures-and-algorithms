@@ -16,3 +16,6 @@ The constructor and .insert are O(1). The includes and .toString methods involve
 .insert adds a node to the front of the list.
 .includes checks if the list includes a value.
 .toString returns a string of all values in the list.
+.append adds node to the end of the list.
+.insertBefore adds node before a given node.
+.insertAfter adds node after a given node.
