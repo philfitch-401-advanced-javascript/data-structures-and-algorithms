@@ -52,11 +52,22 @@ describe('LinkedList', () => {
     expect(linkedList.head.next.next.next.next.value).toEqual(7);
   });
 
-  it('insert a node before a node located i the middle of a linked list', () => {
-
+  it('insert a node before a node located in the middle of a linked list', () => {
+    let linkedList = new LinkedList();
+    linkedList.insert(2);
+    linkedList.insert(3);
+    linkedList.insert(1);
+    linkedList.insertBefore(3, 5);
+    expect(linkedList.head.next.value).toEqual(5);
   });
-  it('insert a node before the first node of a linked list', () => {
 
+  it('insert a node before the first node of a linked list', () => {
+    let linkedList = new LinkedList();
+    linkedList.insert(2);
+    linkedList.insert(3);
+    linkedList.insert(1);
+    linkedList.insert(5);
+    expect(linkedList.head.value).toEqual(5);
   });
 
   it('insert after a node in the middle of the linked list', () => {
