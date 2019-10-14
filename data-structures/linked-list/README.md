@@ -6,6 +6,7 @@ Create a linked list,
 insert nodes,
 check if the list includes a value,
 return a list of values
+insert into a linked list
 
 ## Approach & Efficiency
 Write a test for each method and try writing code to pass the test.

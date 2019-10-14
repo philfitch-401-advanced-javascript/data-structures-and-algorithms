@@ -48,6 +48,19 @@ class LinkedList {
     }
     return valueString;
   }
+
+  append(value) {
+    let node = new Node(value);
+    let current = this.head;
+    while(current.next) {
+      current = current.next;
+    }
+    current.next = node;
+  }
+
+  // insertBefore(value, newVal)
+
+  // insertAfter(value, newVal)
 }
 
 module.exports = LinkedList;
