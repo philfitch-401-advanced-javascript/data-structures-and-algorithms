@@ -71,10 +71,20 @@ describe('LinkedList', () => {
   });
 
   it('insert after a node in the middle of the linked list', () => {
-
+    let linkedList = new LinkedList();
+    linkedList.insert(2);
+    linkedList.insert(3);
+    linkedList.insert(1);
+    linkedList.insertAfter(3, 5);
+    expect(linkedList.head.next.next.value).toEqual(5);
   });
 
   it('insert a node after the last node of the linked list', () => {
-
+    let linkedList = new LinkedList();
+    linkedList.insert(2);
+    linkedList.insert(3);
+    linkedList.insert(1);
+    linkedList.insertAfter(2, 5);
+    expect(linkedList.head.next.next.next.value).toEqual(5);
   });
 });

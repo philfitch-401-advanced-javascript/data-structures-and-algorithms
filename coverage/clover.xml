@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1571027791471" clover="3.2.0">
-  <project timestamp="1571027791471" name="All files">
-    <metrics statements="54" coveredstatements="52" conditionals="8" coveredconditionals="6" methods="9" coveredmethods="9" elements="71" coveredelements="67" complexity="0" loc="54" ncloc="54" packages="3" files="3" classes="3"/>
+<coverage generated="1571028442358" clover="3.2.0">
+  <project timestamp="1571028442358" name="All files">
+    <metrics statements="59" coveredstatements="57" conditionals="8" coveredconditionals="6" methods="10" coveredmethods="10" elements="77" coveredelements="73" complexity="0" loc="59" ncloc="59" packages="3" files="3" classes="3"/>
     <package name="challenges.arrayBinarySearch">
       <metrics statements="13" coveredstatements="12" conditionals="6" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <file name="array-binary-search.js" path="/Users/phil/alchemy/career-track/data-structures-and-algorithms/challenges/arrayBinarySearch/array-binary-search.js">
@@ -33,15 +33,15 @@
       </file>
     </package>
     <package name="data-structures.linked-list">
-      <metrics statements="36" coveredstatements="35" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
+      <metrics statements="41" coveredstatements="40" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="8"/>
       <file name="linkedList.js" path="/Users/phil/alchemy/career-track/data-structures-and-algorithms/data-structures/linked-list/linkedList.js">
-        <metrics statements="36" coveredstatements="35" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
-        <line num="5" count="23" type="stmt"/>
-        <line num="14" count="8" type="stmt"/>
-        <line num="19" count="19" type="stmt"/>
-        <line num="20" count="19" type="stmt"/>
-        <line num="21" count="19" type="stmt"/>
-        <line num="22" count="19" type="stmt"/>
+        <metrics statements="41" coveredstatements="40" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="8"/>
+        <line num="5" count="31" type="stmt"/>
+        <line num="14" count="10" type="stmt"/>
+        <line num="19" count="25" type="stmt"/>
+        <line num="20" count="25" type="stmt"/>
+        <line num="21" count="25" type="stmt"/>
+        <line num="22" count="25" type="stmt"/>
         <line num="26" count="2" type="stmt"/>
         <line num="27" count="2" type="stmt"/>
         <line num="28" count="2" type="stmt"/>
@@ -67,11 +67,16 @@
         <line num="62" count="1" type="stmt"/>
         <line num="63" count="1" type="stmt"/>
         <line num="64" count="1" type="stmt"/>
-        <line num="65" count="1" type="stmt"/>
-        <line num="66" count="0" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="67" count="1" type="stmt"/>
         <line num="68" count="1" type="stmt"/>
-        <line num="69" count="1" type="stmt"/>
-        <line num="75" count="1" type="stmt"/>
+        <line num="72" count="2" type="stmt"/>
+        <line num="73" count="2" type="stmt"/>
+        <line num="74" count="2" type="stmt"/>
+        <line num="75" count="3" type="stmt"/>
+        <line num="77" count="2" type="stmt"/>
+        <line num="78" count="2" type="stmt"/>
+        <line num="82" count="1" type="stmt"/>
       </file>
     </package>
   </project>
