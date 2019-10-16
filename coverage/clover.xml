@@ -1,28 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1569554743725" clover="3.2.0">
-  <project timestamp="1569554743725" name="All files">
-    <metrics statements="19" coveredstatements="12" conditionals="2" coveredconditionals="1" methods="5" coveredmethods="4" elements="26" coveredelements="17" complexity="0" loc="19" ncloc="19" packages="1" files="1" classes="1"/>
-    <file name="linkedList.js" path="/Users/phil/alchemy/career-track/data-structures-and-algorithms/data-structures/linked-list/linkedList.js">
-      <metrics statements="19" coveredstatements="12" conditionals="2" coveredconditionals="1" methods="5" coveredmethods="4"/>
-      <line num="6" count="4" type="stmt"/>
-      <line num="15" count="3" type="stmt"/>
-      <line num="20" count="4" type="stmt"/>
-      <line num="21" count="4" type="stmt"/>
-      <line num="22" count="4" type="stmt"/>
-      <line num="23" count="4" type="stmt"/>
-      <line num="27" count="1" type="stmt"/>
-      <line num="28" count="1" type="stmt"/>
-      <line num="29" count="1" type="cond" truecount="1" falsecount="1"/>
-      <line num="30" count="0" type="stmt"/>
-      <line num="32" count="1" type="stmt"/>
-      <line num="34" count="1" type="stmt"/>
-      <line num="38" count="0" type="stmt"/>
-      <line num="39" count="0" type="stmt"/>
-      <line num="40" count="0" type="stmt"/>
-      <line num="41" count="0" type="stmt"/>
-      <line num="42" count="0" type="stmt"/>
-      <line num="44" count="0" type="stmt"/>
-      <line num="48" count="1" type="stmt"/>
-    </file>
+<coverage generated="1571194083651" clover="3.2.0">
+  <project timestamp="1571194083651" name="All files">
+    <metrics statements="42" coveredstatements="41" conditionals="8" coveredconditionals="6" methods="7" coveredmethods="7" elements="57" coveredelements="54" complexity="0" loc="42" ncloc="42" packages="3" files="3" classes="3"/>
+    <package name="challenges.arrayBinarySearch">
+      <metrics statements="13" coveredstatements="12" conditionals="6" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="array-binary-search.js" path="/Users/phil/alchemy/career-track/data-structures-and-algorithms/challenges/arrayBinarySearch/array-binary-search.js">
+        <metrics statements="13" coveredstatements="12" conditionals="6" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="challenges.arrayShift">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="array-shift.js" path="/Users/phil/alchemy/career-track/data-structures-and-algorithms/challenges/arrayShift/array-shift.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="data-structures.linked-list">
+      <metrics statements="24" coveredstatements="24" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
+      <file name="linkedList.js" path="/Users/phil/alchemy/career-track/data-structures-and-algorithms/data-structures/linked-list/linkedList.js">
+        <metrics statements="24" coveredstatements="24" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
+        <line num="5" count="6" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="19" count="6" type="stmt"/>
+        <line num="20" count="6" type="stmt"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="22" count="6" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
+        <line num="32" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
