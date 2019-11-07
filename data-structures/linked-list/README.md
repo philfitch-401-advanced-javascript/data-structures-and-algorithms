@@ -12,6 +12,8 @@ insert into a linked list
 Write a test for each method and try writing code to pass the test.
 The constructor and .insert are O(1). The includes and .toString methods involved making an array from the list, so were a little less efficient. I wonder if there is a better way?
 
+Using reverseArray from an earlier challenge made kthFromEnd easy to write.
+
 ## API
 .insert adds a node to the front of the list.
 .includes checks if the list includes a value.
@@ -19,3 +21,4 @@ The constructor and .insert are O(1). The includes and .toString methods involve
 .append adds node to the end of the list.
 .insertBefore adds node before a given node.
 .insertAfter adds node after a given node.
+.kthFromEnd returns value of node 'k' from the end.

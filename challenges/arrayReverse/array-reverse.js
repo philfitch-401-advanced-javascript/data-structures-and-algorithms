@@ -19,3 +19,5 @@ const otherReverseArray = array => {
   }
   return array;
 };
+
+module.exports = reverseArray;
