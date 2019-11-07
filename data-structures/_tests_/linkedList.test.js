@@ -7,7 +7,9 @@ describe('LinkedList', () => {
     const linkedList = new LinkedList();
     expect(linkedList).toEqual({ head: null, size: 0 });
   });
-  
+});
+
+describe('insert', () => {
   it('inserts a new node', () => {
     let linkedList = new LinkedList();
     linkedList.insert('red');
@@ -16,7 +18,18 @@ describe('LinkedList', () => {
     linkedList.insert('orange');
     expect(linkedList.size).toBe(2);
   });
-  
+
+  it('insert a node before the first node of a linked list', () => {
+    let linkedList = new LinkedList();
+    linkedList.insert(2);
+    linkedList.insert(3);
+    linkedList.insert(1);
+    linkedList.insert(5);
+    expect(linkedList.head.value).toEqual(5);
+  });
+});
+
+describe('includes', () => {
   it('finds if value is included', () => {
     let linkedList = new LinkedList();
     linkedList.insert('red');
@@ -24,14 +37,18 @@ describe('LinkedList', () => {
     expect(linkedList.includes('red')).toBe(true);
     expect(linkedList.includes('yellow')).toBe(false);
   });
-  
+});
+
+describe('toString', () => {
   it('collects stringified values', () => {
     let linkedList = new LinkedList();
     linkedList.insert('red');
     linkedList.insert('orange');
     expect(linkedList.toString()).toEqual('orange, red');
   });
+});
 
+describe('append', () => {
   it('add a node to the end of the linked list', () => {
     let linkedList = new LinkedList();
     linkedList.insert(2);
@@ -51,7 +68,9 @@ describe('LinkedList', () => {
     linkedList.append(7);
     expect(linkedList.head.next.next.next.next.value).toEqual(7);
   });
+});
 
+describe('insertBefore', () => {
   it('insert a node before a node located in the middle of a linked list', () => {
     let linkedList = new LinkedList();
     linkedList.insert(2);
@@ -60,16 +79,9 @@ describe('LinkedList', () => {
     linkedList.insertBefore(3, 5);
     expect(linkedList.head.next.value).toEqual(5);
   });
+});
 
-  it('insert a node before the first node of a linked list', () => {
-    let linkedList = new LinkedList();
-    linkedList.insert(2);
-    linkedList.insert(3);
-    linkedList.insert(1);
-    linkedList.insert(5);
-    expect(linkedList.head.value).toEqual(5);
-  });
-
+describe('insertAfter', () => {
   it('insert after a node in the middle of the linked list', () => {
     let linkedList = new LinkedList();
     linkedList.insert(2);
@@ -86,5 +98,20 @@ describe('LinkedList', () => {
     linkedList.insert(1);
     linkedList.insertAfter(2, 5);
     expect(linkedList.head.next.next.next.value).toEqual(5);
+  });
+});
+
+describe('kthFromEnd', () => {
+  it('returns value of node kth from the end', () => {
+    let linkedList = new LinkedList();
+    linkedList.insert(2);
+    expect(linkedList.kthFromEnd(0)).toEqual(2);
+    linkedList.insert(8);
+    linkedList.insert(3);
+    linkedList.insert(1);
+    expect(linkedList.kthFromEnd(2)).toEqual(3);
+    expect(linkedList.kthFromEnd(4)).toEqual('Exception');
+    expect(linkedList.kthFromEnd(6)).toEqual('Exception');
+    expect(linkedList.kthFromEnd(-5)).toEqual('Exception');
   });
 });
