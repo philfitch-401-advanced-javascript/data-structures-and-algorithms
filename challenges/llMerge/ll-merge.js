@@ -1,20 +1,24 @@
 
 const mergeLists = (list1, list2) => {
+
   let current = list1.head;
-  console.log('current', current);
-  while(current || list2.next) {
+  
+  while(current && list2.size) {
     let subsequent = list2.head;
-    console.log('subsequent', subsequent);
-    if(subsequent.next) { 
-      list2.head = subsequent.next;
-    }
+    list2.head = subsequent.next;
     if(current.next) {
       subsequent.next = current.next;
+    } else if(!current.next) {
+      current.next = subsequent;
+      list1.size += list2.size;
+      return list1;
     }
     current.next = subsequent;
     current = subsequent.next;
     list1.size ++;
+    list2.size --;
   }
+
   return list1;
 };
 
