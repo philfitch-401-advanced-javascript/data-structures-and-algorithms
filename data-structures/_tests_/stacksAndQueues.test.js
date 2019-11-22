@@ -40,7 +40,14 @@ describe('Stack', () => {
   });
 
   it('empty a stack after multiple pops', () => {
-
+    let stack = new Stack();
+    stack.push('red');
+    stack.push('orange');
+    expect(stack.isEmpty()).toBe(false);
+    stack.pop('red');
+    stack.pop('orange');
+    expect(stack.isEmpty()).toBe(true);
+    
   });
 });
 
@@ -84,6 +91,12 @@ describe('Queue', () => {
   });
 
   it('empty a queue after multiple dequeues', () => {
-
+    let queue = new Queue();
+    queue.enqueue('red');
+    queue.enqueue('orange');
+    expect(queue.isEmpty()).toBe(false);
+    queue.dequeue('red');
+    queue.dequeue('orange');
+    expect(queue.isEmpty()).toBe(true);
   });
 });

@@ -32,7 +32,8 @@ class Stack {
   }
 
   isEmpty() {
-
+    if(this.size === 0) {return true;}
+    return false;
   }
 }
 
@@ -69,7 +70,8 @@ class Queue {
   }
 
   isEmpty() {
-
+    if(this.size === 0) {return true;}
+    return false;
   }
 }
 
