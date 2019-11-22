@@ -14,7 +14,11 @@ describe('Stack', () => {
   });
 
   it('push multiple values onto a stack', () => {
-
+    let stack = new Stack();
+    stack.push('red');
+    stack.push('orange');
+    expect(stack.size).toBe(2);
+    expect(stack.top).toEqual({ 'value': 'orange', 'next': { value: 'red', 'next': null } });
   });
 
   it('pop off the stack', () => {
@@ -44,7 +48,11 @@ describe('Queue', () => {
   });
 
   it('enqueue multiple values into a queue', () => {
-
+    let queue = new Queue();
+    queue.enqueue('red');
+    queue.enqueue('orange');
+    expect(queue.size).toBe(2);
+    expect(queue.front).toEqual({ 'value': 'red', 'next': { 'value': 'orange', 'next': null } });
   });
 
   it('dequeue out of a queue the expected value', () => {
