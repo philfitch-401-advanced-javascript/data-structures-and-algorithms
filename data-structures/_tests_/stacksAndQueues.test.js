@@ -22,7 +22,13 @@ describe('Stack', () => {
   });
 
   it('pop off the stack', () => {
-
+    let stack = new Stack();
+    stack.push('red');
+    stack.push('orange');
+    let result = stack.pop();
+    expect(stack.size).toBe(1);
+    expect(stack.top).toEqual({ 'value': 'red', 'next': null });
+    expect(result).toBe('orange');
   });
 
   it('empty a stack after multiple pops', () => {
@@ -56,7 +62,13 @@ describe('Queue', () => {
   });
 
   it('dequeue out of a queue the expected value', () => {
-
+    let queue = new Queue();
+    queue.enqueue('red');
+    queue.enqueue('orange');
+    let result = queue.dequeue();
+    expect(queue.size).toBe(1);
+    expect(queue.front).toEqual({ 'value': 'orange', 'next': null });
+    expect(result).toBe('red');
   });
 
   it('peek into a queue, seeing the expected value', () => {
