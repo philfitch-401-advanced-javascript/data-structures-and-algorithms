@@ -28,7 +28,7 @@ class Stack {
   }
 
   peek() {
-
+    return this.top.value;
   }
 
   isEmpty() {
@@ -65,7 +65,7 @@ class Queue {
   }
 
   peek() {
-
+    return this.front.value;
   }
 
   isEmpty() {
