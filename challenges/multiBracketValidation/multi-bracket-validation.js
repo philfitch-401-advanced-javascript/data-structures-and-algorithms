@@ -17,9 +17,10 @@ function multiBracketValidation(input) {
     || brackets[i] === '{' && brackets[i + 1] === '}'
     || brackets[i] === '[' && brackets[i + 1] === ']') {
       brackets.splice(i, 2);
-      i = 0;
+      i = -1;
     }
   }
+  console.log(brackets);
   if(brackets.length > 0) {
     return false;
   }
