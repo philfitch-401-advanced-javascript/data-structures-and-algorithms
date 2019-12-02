@@ -5,7 +5,7 @@ describe('PseudoQueue', () => {
     const pseudoQue = new PseudoQueue();
     pseudoQue.enqueue('red');
     pseudoQue.enqueue('orange');
-    expect(pseudoQue.front.value).toEqual('red');
+    expect(pseudoQue.front).toEqual('red');
   });
 
   it('dequeue a node from the front of the queue and returns its value', () => {
@@ -13,7 +13,7 @@ describe('PseudoQueue', () => {
     pseudoQue.enqueue('red');
     pseudoQue.enqueue('orange');
     let result = pseudoQue.dequeue();
-    expect(pseudoQue.front.value).toEqual('orange');
+    expect(pseudoQue.front).toEqual('orange');
     expect(result).toBe('red');
   });
 });
