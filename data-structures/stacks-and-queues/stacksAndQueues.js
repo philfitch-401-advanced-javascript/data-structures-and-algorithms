@@ -75,4 +75,4 @@ class Queue {
   }
 }
 
-module.exports = { Stack, Queue };
+module.exports = { Node, Stack, Queue };
