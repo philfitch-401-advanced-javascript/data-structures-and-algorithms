@@ -17,3 +17,5 @@ TOC
 [Queue with Stacks](challenges/queueWithStacks/queue-with-stacks.js)
 
 [FIFO Animal Shelter](challenges/fifoAnimalShelter/fifo-animal-shelter.js)
+
+[Multi-Bracket Validation](challenges/multiBracetValidation/multi-bracket-validation.js)
