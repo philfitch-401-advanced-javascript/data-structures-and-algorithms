@@ -1,4 +1,4 @@
-const { Node, Stack } = require('../../data-structures/stacks-and-queues/stacksAndQueues');
+const { Stack } = require('../../data-structures/stacks-and-queues/stacksAndQueues');
 
 
 class PseudoQueue {
