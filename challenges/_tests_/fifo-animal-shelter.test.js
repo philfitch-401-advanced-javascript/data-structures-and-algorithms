@@ -15,5 +15,6 @@ describe('AnimalShelter', () => {
     let catPref = shelter.dequeue('cat');
     expect(dogPref).toEqual('dog');
     expect(catPref).toEqual('cat');
+    expect(shelter.size).toBe(0);
   });
 });
