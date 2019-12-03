@@ -12,7 +12,6 @@ class BinaryTree {
   constructor()
   {
     this.root = null;
-    this.size = 0;
   }
 
   add(value) {
@@ -39,12 +38,25 @@ class BinaryTree {
 class BinarySearchTree {
   constructor()
   {
-    this.head = null;
-    this.size = 0;
+    this.root = null;
   }
 
   add(value) {
-
+    let node = new Node(value);
+    if(this.root === null) {
+      return this.root = node;
+    }
+    if(value < this.value && this.left) {
+      this.left.add(value);
+    } else {
+      return this.left = node;
+    }
+    if(value > this.value && this.right) {
+      this.right.add(value);
+    } else {
+      return this.right = node;
+    }
+    console.log('Value already exists');
   }
 
   contains(value) {

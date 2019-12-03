@@ -2,7 +2,8 @@ const { BinaryTree, BinarySearchTree } = require('../tree/tree');
 
 describe('BinaryTree', () => {
   it('Can successfully instantiate an empty tree', () => {
-
+    let binaryTree = new BinaryTree;
+    expect(binaryTree.root).toBe(null);
   });
 
   it('Can successfully instantiate a tree with a single root node', () => {
@@ -28,11 +29,14 @@ describe('BinaryTree', () => {
 
 describe('BinarySearchTree', () => {
   it('Can successfully instantiate an empty tree', () => {
-
+    let binarySearchTree = new BinarySearchTree;
+    expect(binarySearchTree.root).toBe(null);
   });
 
   it('Can successfully instantiate a tree with a single root node', () => {
-
+    let binarySearchTree = new BinarySearchTree;
+    binarySearchTree.add(5);
+    expect(binarySearchTree.root.value).toEqual(5);
   });
 
   it('Can successfully add a left child and right child to a single root node', () => {
