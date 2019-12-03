@@ -11,6 +11,27 @@ class Node {
 class BinaryTree {
   constructor()
   {
+    this.root = null;
+    this.size = 0;
+  }
+
+  add(value) {
+
+  }
+
+  contains(value) {
+
+  }
+
+  preOrder() {
+
+  }
+
+  inOrder() {
+
+  }
+
+  postOrder() {
 
   }
 }
@@ -18,6 +39,27 @@ class BinaryTree {
 class BinarySearchTree {
   constructor()
   {
+    this.head = null;
+    this.size = 0;
+  }
+
+  add(value) {
+
+  }
+
+  contains(value) {
+
+  }
+
+  preOrder() {
+
+  }
+
+  inOrder() {
+
+  }
+
+  postOrder() {
 
   }
 }

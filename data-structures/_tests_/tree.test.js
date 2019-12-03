@@ -1,25 +1,53 @@
 const { BinaryTree, BinarySearchTree } = require('../tree/tree');
 
 describe('BinaryTree', () => {
-  it('preOrder', () => {
+  it('Can successfully instantiate an empty tree', () => {
 
   });
 
-  it('inOrder', () => {
+  it('Can successfully instantiate a tree with a single root node', () => {
 
   });
 
-  it('postOrder', () => {
+  it('Can successfully add a left child and right child to a single root node', () => {
+
+  });
+
+  it('Can successfully return a collection from a preorder traversal', () => {
+
+  });
+
+  it('Can successfully return a collection from an inorder traversal', () => {
+
+  });
+
+  it('Can successfully return a collection from a postorder traversal', () => {
 
   });
 });
 
 describe('BinarySearchTree', () => {
-  it('add', () => {
+  it('Can successfully instantiate an empty tree', () => {
 
   });
 
-  it('contains', () => {
+  it('Can successfully instantiate a tree with a single root node', () => {
+
+  });
+
+  it('Can successfully add a left child and right child to a single root node', () => {
+
+  });
+
+  it('Can successfully return a collection from a preorder traversal', () => {
+
+  });
+
+  it('Can successfully return a collection from an inorder traversal', () => {
+
+  });
+
+  it('Can successfully return a collection from a postorder traversal', () => {
 
   });
 });
