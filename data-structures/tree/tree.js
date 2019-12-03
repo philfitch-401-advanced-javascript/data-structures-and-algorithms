@@ -8,6 +8,7 @@ class Node {
   }
 }
 
+
 class BinaryTree {
   constructor()
   {
@@ -25,7 +26,7 @@ class BinaryTree {
     if(!this.right) {
       return this.right = node;
     }
-    
+
   }
 
   contains(value) {
@@ -45,6 +46,7 @@ class BinaryTree {
   }
 }
 
+
 class BinarySearchTree {
   constructor()
   {
@@ -56,18 +58,24 @@ class BinarySearchTree {
     if(this.root === null) {
       return this.root = node;
     }
-    if(value < this.value && this.left) {
-      this.left.add(value);
-    } else {
-      return this.left = node;
+    traverseAdd(node, this.root);
+    function traverseAdd(node, current) {
+      if(node.value < current.value) {
+        if(!current.left) {
+          return current.left = node;
+        }
+        current.left.traverseAdd(node, current.left);
+      } 
+      if(node.value > current.value) {
+        if(!current.right) {
+          return current.right = node;
+        }
+        current.right.traverseAdd(node, current.right);
+      }
+      console.log('Value already exists');
     }
-    if(value > this.value && this.right) {
-      this.right.add(value);
-    } else {
-      return this.right = node;
-    }
-    console.log('Value already exists');
   }
+  
 
   contains(value) {
 

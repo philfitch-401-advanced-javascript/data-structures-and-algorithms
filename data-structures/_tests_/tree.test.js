@@ -13,7 +13,12 @@ describe('BinaryTree', () => {
   });
 
   it('Can successfully add a left child and right child to a single root node', () => {
-
+    let binaryTree = new BinaryTree;
+    binaryTree.add(5);
+    binaryTree.add(7);
+    binaryTree.add(3);
+    expect(binaryTree.left.value).toBe(7);
+    expect(binaryTree.right.value).toBe(3);
   });
 
   it('Can successfully return a collection from a preorder traversal', () => {
@@ -42,7 +47,12 @@ describe('BinarySearchTree', () => {
   });
 
   it('Can successfully add a left child and right child to a single root node', () => {
-
+    let binarySearchTree = new BinarySearchTree;
+    binarySearchTree.add(5);
+    binarySearchTree.add(7);
+    binarySearchTree.add(3);
+    expect(binarySearchTree.root.left.value).toBe(3);
+    expect(binarySearchTree.root.right.value).toBe(7);
   });
 
   it('Can successfully return a collection from a preorder traversal', () => {
