@@ -7,7 +7,9 @@ describe('BinaryTree', () => {
   });
 
   it('Can successfully instantiate a tree with a single root node', () => {
-
+    let binaryTree = new BinaryTree;
+    binaryTree.add(5);
+    expect(binaryTree.root.value).toBe(5);
   });
 
   it('Can successfully add a left child and right child to a single root node', () => {

@@ -15,7 +15,17 @@ class BinaryTree {
   }
 
   add(value) {
-
+    let node = new Node(value);
+    if(this.root === null) {
+      return this.root = node;
+    }
+    if(!this.left) {
+      return this.left = node;
+    }
+    if(!this.right) {
+      return this.right = node;
+    }
+    
   }
 
   contains(value) {
