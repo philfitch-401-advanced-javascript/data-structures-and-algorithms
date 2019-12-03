@@ -17,12 +17,26 @@ describe('BinaryTree', () => {
     binaryTree.add(5);
     binaryTree.add(7);
     binaryTree.add(3);
-    expect(binaryTree.left.value).toBe(7);
-    expect(binaryTree.right.value).toBe(3);
+    expect(binaryTree.root.value).toBe(5);
+    expect(binaryTree.root.left.value).toBe(7);
+    expect(binaryTree.root.right.value).toBe(3);
+  });
+
+  it('determines if a value is in a BinaryTree', () => {
+    let binaryTree = new BinaryTree;
+    binaryTree.add(5);
+    binaryTree.add(7);
+    binaryTree.add(3);
+    expect(binaryTree.contains(7)).toBe(true);
+    expect(binaryTree.contains(4)).toBe(false);
   });
 
   it('Can successfully return a collection from a preorder traversal', () => {
-
+    let binaryTree = new BinaryTree;
+    binaryTree.add(5);
+    binaryTree.add(7);
+    binaryTree.add(3);
+    expect(binaryTree.preOrder()).toEqual([5, 7, 3]);
   });
 
   it('Can successfully return a collection from an inorder traversal', () => {
@@ -55,8 +69,21 @@ describe('BinarySearchTree', () => {
     expect(binarySearchTree.root.right.value).toBe(7);
   });
 
-  it('Can successfully return a collection from a preorder traversal', () => {
+  it.skip('determines if a value is in a BinarySearchTree', () => {
+    let binarySearchTree = new BinarySearchTree;
+    binarySearchTree.add(5);
+    binarySearchTree.add(7);
+    binarySearchTree.add(3);
+    expect(binarySearchTree.contains(7)).toBe(true);
+    expect(binarySearchTree.contains(4)).toBe(false);
+  });
 
+  it.skip('Can successfully return a collection from a preorder traversal', () => {
+    let binarySearchTree = new BinarySearchTree;
+    binarySearchTree.add(5);
+    binarySearchTree.add(7);
+    binarySearchTree.add(3);
+    expect(binarySearchTree.preOrder()).toEqual([5, 3, 7]);
   });
 
   it('Can successfully return a collection from an inorder traversal', () => {
