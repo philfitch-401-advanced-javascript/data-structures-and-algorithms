@@ -1,6 +1,5 @@
 
 function multiBracketValidation(input) {
-  console.log(input);
   let brackets = [];
   for(let i = 0; i < input.length; i++) {
     if(input[i] === '(' 
@@ -20,7 +19,6 @@ function multiBracketValidation(input) {
       i = -1;
     }
   }
-  console.log(brackets);
   if(brackets.length > 0) {
     return false;
   }
